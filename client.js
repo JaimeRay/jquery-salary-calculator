@@ -8,5 +8,11 @@ function readyNow(){
 }
 
 function displayNames(){
-    console.log('The Enter Button Was CLicked')
+    console.log('The Enter Button Was CLicked');
+    $('#enterButton').append(`
+    
+    
+    
+    
+    `)
 }
