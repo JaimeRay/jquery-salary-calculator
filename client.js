@@ -31,27 +31,18 @@ function displayNames(){
         <td>
             ${firstNames}
         </td>
-    </tr>
-    <tr>
         <td>
              ${lastNames}
-         </td>
-     </tr>
-     <tr>
         <td>
             ${idNumbers}
         </td>
-    </tr>
-    <tr>
         <td>
             ${jobTitles}
         </td>
-    </tr>
-    <tr>
         <td>
             ${annualSalary}
         </td>
-    </tr>
+    <tr>
     
     
      `)//end append
