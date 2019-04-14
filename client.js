@@ -9,6 +9,7 @@ let monthlySalary = [];
 function readyNow(){
     console.log('JQ');
     $('#enterButton').on('click', displayNames)
+    $('#tbodyID').on('click', '.deleteButton',  deleteFunction)
 }
 
 function displayNames(){
@@ -46,7 +47,11 @@ function displayNames(){
         <td>
             ${annualSalary}
         </td>
+        <td>
+        <button class='deleteButton'>Delete</button>
+        </td>
     <tr> 
+        
     
     
      `)//end append
@@ -87,3 +92,8 @@ function addTogether(){
 
 }
 
+
+function deleteFunction(){
+    console.log('delete was clicked');
+    $(this).closest('tr').remove();
+}
