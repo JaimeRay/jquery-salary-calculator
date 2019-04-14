@@ -2,6 +2,10 @@ console.log('js')
 
 $(document).ready(readyNow);
 
+let salary = [];
+
+let monthlySalary = [];
+
 function readyNow(){
     console.log('JQ');
     $('#enterButton').on('click', displayNames)
@@ -42,9 +46,35 @@ function displayNames(){
         <td>
             ${annualSalary}
         </td>
-    <tr>
+    <tr> 
     
     
      `)//end append
 
+addMonthly(annualSalary);
+
+
 }//end displayNames
+
+function addMonthly(num1){
+    let num2 = num1 / 12;
+    monthlySalary.push(num2);
+    console.log(monthlySalary);
+    addTogether();
+    
+}
+
+
+function addTogether(){
+    let totalMonthly  = 0;
+    for (let i = 0; i < monthlySalary.length; i++){
+      totalMonthly = totalMonthly + monthlySalary[i];
+
+    }//end for
+    console.log(totalMonthly);
+
+    $('#totalSarary').append(`
+        ${Number (totalMonthly)}
+    `)
+}
+
