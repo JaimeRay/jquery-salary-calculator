@@ -15,7 +15,15 @@ function displayNames(){
     let lastNames = $('#lastName').val();
     console.log($('#lastName').val());
 
-    
+    let idNumbers = $('#idNumber').val();
+    console.log($('#idNumber').val());
+
+    let jobTitles = $('#jobTitle').val();
+    console.log( $('#jobTitle').val());
+
+    let annualSalary = $('#annualSalart').val();
+    console.log($('#annualSalart').val())
+
 
 
     $('#tbodyID').append(`
@@ -31,17 +39,17 @@ function displayNames(){
      </tr>
      <tr>
         <td>
-            ${idNumber}
+            ${idNumbers}
         </td>
     </tr>
     <tr>
         <td>
-            ${jobTitle}
+            ${jobTitles}
         </td>
     </tr>
     <tr>
         <td>
-            ${annualSalart}
+            ${annualSalary}
         </td>
     </tr>
     
