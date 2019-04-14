@@ -73,10 +73,17 @@ function addTogether(){
     }//end for
     console.log(totalMonthly);
 
+    if (totalMonthly  >= 20000){
+        $('#totalSarary').css('background-color', 'red')
+    }
+
     $('#totalSarary').empty();
 
     $('#totalSarary').append(
     'Total Monthly: ', Number (totalMonthly)
-    )
+
+    )//end append
+
+
 }
 
