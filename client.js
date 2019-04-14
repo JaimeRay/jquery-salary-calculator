@@ -73,8 +73,10 @@ function addTogether(){
     }//end for
     console.log(totalMonthly);
 
-    $('#totalSarary').append(`
-        ${Number (totalMonthly)}
-    `)
+    $('#totalSarary').empty();
+
+    $('#totalSarary').append(
+    'Total Monthly: ', Number (totalMonthly)
+    )
 }
 
